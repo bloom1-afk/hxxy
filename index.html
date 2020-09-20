@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0"/>
+    <title>武汉华夏理工学院</title>
+    <link rel="icon" href="./img/hxxy.ico" type="img/x-ico">
+    <link rel="stylesheet" href="./css/main.css">
+    <style>
+        .container hr{
+            height: 1px;
+            border: none;
+            background:#FFFFFF;
+        }
+        .common{
+            color: green;
+            padding: 1em 1.1875em;
+        }
+        .title{
+            color: green;
+        }
+        .title > a{
+            color: #888;
+            float: right;
+            font-size: 10px;
+        }
+        .topic{
+            font-size: 10px;
+            width: 100%;
+            display: flex;
+            height: 3.1em;
+            margin-bottom: 1.05em;
+        }
+        .topic > ul,.topic >a{
+            display: inline-block;
+        }
+        .topic > ul{
+            width: 4.1575em;
+            background: rebeccapurple;
+        }
+        .topic > ul > li{
+            text-align: center;
+            overflow: hidden;
+        }
+        .topic > a{
+            width: 85%;
+            padding-left: .7em;
+
+        }
+        .special{
+            width: 100%;
+
+        }
+        .topic .data{
+            box-sizing: border-box;
+            border: 1px solid #B3BFBD;
+            width: 39px;
+            min-width: 39px;
+        }
+
+        .data > li {
+            height: 50%;
+        }
+        .data li:nth-of-type(1){
+            color: white;
+            background:#2B96C2;
+        }
+        .data li:nth-of-type(2){
+            color: #2B96C2;
+            background:white;
+        }
+        .hxmedia .topic .data > li:nth-of-type(1){
+            background: #2BC299;
+        }
+        .hxmedia .topic .data > li:nth-of-type(2){
+            color:#2BC299;
+        }
+        .hxnotice .topic .data > li:nth-of-type(1){
+            background: green;
+        }
+         .hxnotice .topic .data > li:nth-of-type(2){
+            color: green;
+        }
+         .special > .common{
+           float: left;
+
+         }
+        .specialPart{
+            width:63%;
+            padding-left: .5em;
+        }
+        .fastWay{
+            box-sizing: border-box;
+        }
+        .ztlm{
+            font-size: 10px;
+            display: grid;
+            grid-template-columns: 1.5fr 1.5fr 1fr;
+
+        }
+        .ztlm a{
+           margin: .4em 0;
+        }
+        .ztlm a>span:nth-of-type(1){
+            display: inline-block;
+            width: 30px;
+        }
+        .ztlm a>span:nth-of-type(2):hover{
+            color: green;
+            border-bottom: 1px solid green;
+        }
+        .specialPart img{
+          width: 30%;
+        }
+        .special:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        a.message{
+            overflow: hidden;
+        }
+        footer{
+            margin-top: 1em;
+            width: 100%;
+            height: 9.25em;
+            background:url("./img/foot01.jpg");
+            line-height: 2em;
+        }
+        footer .container{
+              position: relative;
+        }
+        footer .school{
+            width: 21.5em;
+            height: 6.3375em;
+        }
+        footer span{
+            display: inline-block;
+        }
+        footer span p{
+            font-size: 10px;
+        }
+        footer span:nth-of-type(1), footer span:nth-of-type(2){
+            vertical-align:middle;
+            margin-top: 1em;
+        }
+        footer span:nth-of-type(2){
+            margin-left: 1em;
+        }
+
+        footer span:nth-of-type(3), footer span:nth-of-type(4){
+            top: 1em;
+            position: absolute;
+
+        }
+        footer span:nth-of-type(3){
+               right: 7em;
+         }
+         footer span:nth-of-type(4){
+               right: 0;
+         }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="school">
+                <a href="#">
+                    <img src="./img/top02.png"  alt="">
+                </a>
+            </div>
+            <div class="notice">
+                <p>(原武汉理工大学华夏学院)</p>
+            </div>
+            <div class="func">
+                <div class="wrap">
+                    <span class="wrap-1">
+                        <a href="">
+                            <img src="./img/top05.png" class="email" alt="">
+                        </a>
+                    </span>
+                    <span class="wrap-2">
+                        <a href="">
+                              <p>校长信箱</p>
+                        </a>
+                      </span>
+                    <span class="wrap-3">
+                        <img src="./img/nav01.jpg" class="nav1"  alt="">
+                    </span>
+                    <span class="wrap-4">
+                        <a href="">
+                            <p>English</p>
+                        </a>
+                    </span>
+                </div>
+                <div class="search">
+                    <span>
+                        <input type="text" placeholder="在这里搜索">
+                    </span>
+                    <span>
+                        <img src="./img/search01.jpg" class="search-info" alt="">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul class="nav">
+                <li><a href="">网站首页</a></li>
+                <li class="showInfo show1"><a  href="">学校概况</a></li>
+                <li><a href="">发展动态</a></li>
+                <li class="showInfo show1"><a  href="">管理服务</a></li>
+                <li class="showInfo show1"><a  href="">院部设置</a></li>
+                <li class="showInfo show1"><a  href="">师资队伍</a></li>
+                <li class="showInfo show1"><a  href="">教学科研</a></li>
+                <li class="showInfo show1"><a  href="">招生就业</a></li>
+                <li class="showInfo show1"><a  href="">校园文化</a></li>
+                <li><a href="">国际交流</a></li>
+            </ul>
+        </div>
+    </nav>
+    <article>
+        <div class="banner">
+            <div class="container">
+                <div class="bannerImg"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="news">
+                <div class="hxnews"></div>
+                <div class="hxmedia"></div>
+                <div class="hxnotice"></div>
+            </div>
+            <div class="special">
+                <div class="specialPart common">
+                    <span>专题栏目</span>
+                     <hr>
+                    <a href=""><img src="./img/ztlm02.png" alt=""></a>
+                    <a href=""><img src="./img/ztlm03.png" alt=""></a>
+                    <a href=""><img src="./img/ztlm04.png" alt=""></a>
+                </div>
+                <div class="fastWay common">
+                    <span>快速通道</span>
+                    <hr>
+                    <span class="ztlm">
+                        <a href=""><span><img src="./img/ztlm08.png" alt=""></span><span>校内网</span></a>
+                        <a href=""><span><img src="./img/ztlm11.png" alt=""></span><span>学工在线</span></a>
+                        <a href=""><span><img src="./img/ztlm05.png" alt=""></span><span>迎新系统</span></a>
+                        <a href=""><span><img src="./img/ztlm06.png" alt=""></span><span>信息公开</span></a>
+                        <a href=""><span><img src="./img/ztlm12.png" alt=""></span><span>邮件系统</span></a>
+                        <a href=""><span><img src="./img/ztlm09.png" alt=""></span><span>人事招聘</span></a>
+                        <a href=""><span><img src="./img/ztlm07.png" alt=""></span><span>教学管理系统</span></a>
+                        <a href=""><span><img src="./img/ztlm13.png" alt=""></span><span>教育基金会</span></a>
+                        <a href=""><span><img src="./img/ztlm10.png" alt=""></span><span>自主缴费</span></a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </article>
+    <footer>
+        <div class="container">
+            <span ><img class="school" src="./img/top02.png" alt=""></span>
+            <span>
+                <p>版权所有：武汉华夏理工学院 鄂ICP备11015548号-2 鄂公网安备42018502000646</p>
+                <p>地址：湖北省武汉东湖新技术开发区关山大道589号 备案查询www.beian.miit.gov.cn</p>
+                <p>邮编：430223</p>
+            </span>
+            <span class="hxwb"><img src="./img/hxwb.jpg" alt=""></span>
+            <span class="hxwx"><img src="./img/hxwx.jpg" alt=""></span>
+        </div>
+    </footer>
+   <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./js/bannerImg.js"></script>
+<script>
+    let  ShowInfo ={
+        "学校概况":['学校简介','现任领导','校训校标','学校荣誉','校园风光'],
+        "管理服务":["党政办公室", "党建工作部", "教务部", "科研部", "学生事务部", "人力资源部", "财务资产部", "国际交流合作部", "综合保障部", "教学督导办公室", "图书馆", "媒体宣传部", "校团委", "学生资助管理中心", "工会", "创新创业学院", "继续教育学院", "发展规划办公室", "国际教育学院"],
+        "院部设置":['智能制造',"生物与制药工程学院", "商学院", "土木建筑工程学院", "外国语学院"
+            , "信息工程学院", "艺术设计与传媒学院", "创新创业学院", "马克思主义学院", "体育学院"],
+        "师资队伍":["师资概况", "人才引进"],
+        "教学科研":["人才培养", "实践教学", "科学研究"],
+        "招生就业":['招生信息','就业信息'],
+        "校园文化":["华夏讲坛", "团学活动", "师生风采", "教育论坛", "工会活动", "校友会", "心理健康"],
+    };
+    let news = {
+            "华夏新闻":{
+                "0,2020,09-11":'立德树人守初心 身正为范担使命——学校举行2020教师节表彰大会',
+                "1,2020,09-08":'我校2020年新入职教职工岗前培训顺利结束',
+                "2,2020,09-07":'华夏迎来首批2020级新生',
+                "3,2020,08-31":'阔别八月 华夏学子重返教室课堂',
+                "4,2020,08-31":'勇担使命 不负韶华——学校举行新学期第一次国旗下讲话',
+                "5,2020,08-30":'校领导带队开展开学工作检查',
+            },
+            "媒体华夏":{
+                 "0,2020,09-01":'【人民网】武汉华夏理工学院：“国旗下的讲话”开启新学期第一课',
+                 "1,2020,09-01":'【楚天都市网】这所高校开学第一课：面向党旗庄严宣誓',
+                 "2,2020,09-01":'【中国教育在线】武汉华夏理工学院师生志愿服务队助学子安全顺利返校',
+                 "3,2020,08-31":'【楚天都市网】高校教职工私家车组队，助学子安全顺利返校',
+                 "4,2020,08-20":'【楚天都市网】高校机器人公益教育走进山区，网上支教活动获点赞',
+                 "5,2020,08-20":'【人民网】高校机器人公益教育活动走进山区 网上支教活动获赞',
+            },
+            "通知公告":{
+                "0,2020,09-01":'关于武汉华夏理工学院2020年普通专升本补录工作的通知',
+                "1,2020,09-01":'关于组织师生收听收看2020年全国“两会” 及学习“两会”精神的通知',
+                "2,2020,09-01":'国务院公告：4月4日举行全国性哀悼活动',
+                "3,2020,09-01":'武汉华夏理工学院致广大师生家长校友的一封信',
+                "4,2020,09-01":'关于进一步加强新冠肺炎疫情防控期间校园封闭管理的通知',
+                "5,2020,09-01":'教育部：疫情防控期间做好高校在线教学组织与管理工作',
+            }
+    }
+    init();
+    function  init() {
+         $(".search-info").on('click',(e)=>{
+             e.stopPropagation();
+             $(e.currentTarget).css('border','1px solid black');
+         });
+          $(document).on('mouseover',mouseHandler);
+          $('.nav').on('mouseover',mouseHandler);
+
+        if($(window).width()<=1080){
+            $('.nav').off('mouseover');
+            $(document).off('mouseover');
+            if($(window).width()<=976){
+               $('.banner').css({
+                   'height':`${$(window).width()/4}px`,
+               });
+               $('.bannerImg').css({
+                   'height':$('.banner').height(),
+                })
+            }else {
+                 $('.bannerImg').css({
+                     'height':'25em'
+                })
+            }
+         }
+        let props ={
+            imgSrc: ['./img/leftBtn.jpg','./img/rightBtn.jpg','./img/0.jpg','./img/1.jpg','./img/2.jpg','./img/3.jpg','./img/4.jpg','./img/5.jpg'],
+            width:$('.bannerImg').width(),
+            height:$('.bannerImg').height(),
+        };
+        let banner = document.querySelector('.bannerImg');
+        let bannerImg = new BannerImg(props,banner);
+        $('.bannerImg').append(bannerImg);
+        $(window).resize(()=>{
+          if($(window).width()<=1080){//滚动条的也算进去了
+              console.log(5555)
+             $('.nav').off('mouseover');
+             $(document).off('mouseover');
+             $('.info').remove();
+               if($(window).width()<=976){
+                   $('.banner ').css({
+                       'height':`${$(window).width()/4}px`
+                   });
+                   $('.bannerImg').css({
+                       'height':`${$(window).width()/4}px`
+                   });
+
+               }
+               if($(window).width()>976){
+                   $('.banner').css({
+                       height:'25em',
+                   });
+                   $('.bannerImg').css({
+                       height:'25em'
+                   });
+               }
+           }else{
+               $('.nav').on('mouseover',mouseHandler);
+               $(document).on('mouseover',mouseHandler);
+               $('.banner').css('height','25em');
+                 $('.bannerImg').css({
+                       'height':'25em'
+                 });
+                }
+               let props = {
+                       width:$('.bannerImg').width(),
+                       height:$('.bannerImg').height(),
+                   };
+                bannerImg.setData(props)
+        });
+         $(document).on('click',clickHandler);
+         let news = $('.news > div');
+         addNews(news);
+    }
+    function clickHandler(e) {
+         $(".search-info").css('border','none')
+    }
+    function  mouseHandler(e){
+        console.log(111);
+        if($(e.target).parent().hasClass('showInfo')||$(e.target).hasClass('showInfo')){
+             if(!$('.info')) return;
+            let $element = $('.showInfo');
+            let width ='6.4375em',height = '11em';
+            let liWidth ='100%',liHeight = '2.2em';
+            let index = null;
+            let key = e.target.textContent;
+            if(ShowInfo[key] != undefined){
+              switch (key) {
+                case "学校概况":
+                    index  = 0;
+                    width = '17.1875em';
+                    height = '6.625em';
+                    liWidth = '50%';
+                    break;
+                case "管理服务":
+                    index  = 1;
+                    width = '34.375em';
+                     liWidth = '25%';
+                    break;
+                case "院部设置":
+                    liWidth = '50%';
+                    index  = 2;
+                    width = '17.1875em';
+                    break;
+                case "师资队伍":
+                case "招生就业":
+                    index = 3;
+                    if(key === "招生就业"){
+                        index = 5;
+                    }
+                    height = '4.4em';
+                    break;
+                case "教学科研":
+                    index = 4;
+                    height = '6.5em';
+                    break;
+                case "校园文化":
+                    index = 6;
+                    height = '15.3625em';
+                    break;
+              }
+              let $father = $('<ul></ul>').css({
+                  width:`${width}`,
+                  height:`${height}`,
+                  background:'rgba(255,255,255,0.6)',
+                  position:'absolute',
+                  zIndex:2
+              }).addClass('info');
+
+              for(let i = 0; i < ShowInfo[key].length; i++){
+                let item = $('<li></li>').css({
+                     'display':"inline-block",
+                     'width':liWidth,
+                    'height':liHeight,
+                    'line-height':'2.3em',
+
+                 }).addClass('show1')
+                  $(`<a href="#">${ShowInfo[key][i]}</a>`).css({
+                  }).addClass('show1').css('color','black').appendTo(item);
+                item.appendTo($father);
+              }
+              if($('.info')){
+                  $('.info').remove();
+              }
+              $element.eq(index).append($father)
+            }
+            setStyle();
+        }else{
+            if(!($(e.target).hasClass('show1') || $(e.target).hasClass('info'))){
+                 if($('.info')){
+                  $('.info').remove();
+              }
+            }
+
+        }
+    }
+    function  setStyle() {
+        let pre;
+        $('.info .show1').on('mouseenter mouseleave',e=>{
+             $(e.target).css('background','transparent');
+            if(e.type==='mouseenter'){
+                $(e.target).children('a').css('color','green')
+            }else{
+                $(e.target).children('a').css('color','black')
+            }
+        });
+
+    }
+    function  addNews(parent) {
+        let i = 0,ul;
+       for(let key in news){
+           console.log(key);
+          ul =  $(`
+             <ul>
+                <li class="title">
+                    ${key}
+                    <a href="">[更多]</a>
+                    <hr>
+                </li>
+              </ul>
+           `).addClass('common').appendTo(parent[i++]);
+
+         for(let key1 in news[key]){
+             console.log(news[key][key1]);
+               $(` <li class="topic">
+                        <ul class="data">
+                            <li>${key1.slice(2,6)}</li>
+                            <li>${key1.slice(7)}</li>
+                        </ul>
+                        <a class="message" style="font-size: 10px;" href="">
+                            ${news[key][key1]}
+                        </a>
+                    </li>`).appendTo(ul);
+         }
+       }
+    }
+    </script>
+</body>
+</html>

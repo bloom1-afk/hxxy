@@ -1,0 +1,328 @@
+ html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed,
+        figure, figcaption, footer, header, hgroup,
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+
+        }
+        body{
+           background:#F2F2F2;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        html{
+            overflow-x: hidden;
+        }
+        .container{
+            width:70em;
+            max-width:67.5em;
+            margin:0 auto;
+            height: inherit;
+            min-width: 6em;
+        }
+        header{
+            width: 100%;
+            height: 8.45em;
+            background-image: url("../img/top01.jpg");
+            background-size:cover;
+        }
+        header .container{
+            position: relative;
+        }
+        header .container > *{
+            float: left;
+        }
+        header .container> .func{
+            position: absolute;
+            right: 0;
+        }
+        header .school,footer .school{
+            height: inherit;
+            width: 29em;
+        }
+        header img{
+            height: 100%;
+            width: 99%;
+        }
+        header .notice{
+            padding-top: 2.5em;
+            padding-left:1em;
+        }
+        p{
+            color:#47D39B;
+            font-size: 15px;
+        }
+        .func{
+            margin-top:35px;
+            text-align: right;
+        }
+        .func .wrap > *{
+            display: inline-block;
+        }
+        .func .wrap p{
+            color: white;
+        }
+        .wrap{
+            height: 24px;
+            line-height: 24px;
+            margin-bottom: .3em;
+        }
+        .wrap span:nth-of-type(2){
+            margin-right: .4em;
+            margin-left: .2em;
+        }
+        .wrap span:nth-of-type(4){
+            margin-left: .4em;
+        }
+        .wrap span > p{
+            font-size: 13px;
+        }
+        .email{
+            display: inline-block;
+            width: 100%;
+            height: 102%;
+        }
+        .nav1{
+            height: 11px;
+        }
+        .search{
+            height: 24px;
+            line-height: 24px;
+        }
+        .search >*{
+            display: inline-block;
+            float: left;
+        }
+        .search  input{
+            vertical-align: top;
+            height: 24px;
+            width: 11.5em;
+            box-sizing:border-box;
+            border: 1px solid white;
+        }
+        .search img{
+            height: 24px;
+        }
+        .search img:focus{
+            border: 1px solid black;
+        }
+        .search img,.search input{
+            vertical-align: middle;
+            border-radius: 3px;
+        }
+        nav{
+            width: 100%;
+            box-shadow:inset 0 -.99em .6em rgba(200,200,200,.6),inset 0 .2em .4em rgba(200,200,200,.6);
+        }
+
+        nav > .container li{
+            display: inline-block;
+            width: 10%;
+            height:2.6em;
+            text-align: center;
+            float: left;
+            line-height:  2.6em;
+        }
+        nav > .container li:hover{
+            background:#008150;
+        }
+        nav > .container li:hover a{
+            color: white;
+        }
+        nav > .container a{
+            font-size: 15px;
+            display: inline;
+        }
+        nav > .container:after{
+            display: block;
+            content: '';
+            clear: both;
+        }
+        .info .show1 a{
+            display: inline;
+        }
+        /*轮播图*/
+        .banner{
+            background: url("../img/banner01.jpg") repeat-x center top;
+            background-size:auto 21.3125em;
+            width: 100%;
+            height:400px;
+            min-height: 5.5em;
+        }
+        .bannerImg{
+            width: 100%;
+            height: 25em;
+            min-height: 5.5em;
+            background: darkgreen;
+        }
+       .banner > .container{
+            width: 95%;
+        }
+        .news{
+            box-sizing: border-box;
+            width: 100%;
+            margin-top: 1.75em;
+            border: 1px solid white;
+        }
+        .news > div{
+            float:left;
+            width: 33.33%;
+            background:#F2F2F2;
+            height:inherit;
+            box-sizing: border-box;
+            border-left:1px solid rgb(255,255,255);
+            position: relative;
+            overflow: hidden;
+
+
+
+        }
+        .news > div:before{
+            content: '';
+            display: inline-block;
+            width: 40px;
+            height: 300px;
+            background:rgba(10,20,10,.3);
+            filter: blur(4px);
+            position: absolute;
+            top: 50%;
+            transform: translate(-100%,-50%);
+            border-radius:70%;
+            box-shadow: 3px 0 5px 2px rgba(10,10,10,.1);
+        }
+        .news:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+         @media only screen and (max-width:30em){
+               footer div.container span:nth-of-type(2){
+                margin:-1em 0 0 0;
+               }
+              footer  .container span:nth-of-type(2) p{
+                  line-height: 25px;
+              }
+         }
+        @media only screen and (max-width:61em){
+            header{
+                width:100%;
+                height: 4.0625em;
+            }
+            .news{
+                width: 98%;
+                margin-top:  0.625em;
+                margin-left: 1%;
+            }
+            .news > div{
+                width:100%;
+                border-bottom: none;
+                border-top: none;
+            }
+
+            .special > .common{
+                margin-left: 1%;
+                width:98%;
+                padding:1em 0 0 0;
+            }
+            .special >div.common{
+               padding-top:.5em;
+            }
+
+            footer .container span:nth-of-type(2){
+              padding: 0;
+                margin:1.6em 0 0  0;
+            }
+
+
+        }
+        @media only screen and (max-width: 67.5em){
+            header .school{
+                width: 12.5em;
+            }
+            header img{
+                height: 3.55em;
+            }
+            .notice,.search, .wrap span:nth-of-type(1), .wrap span:nth-of-type(2), .wrap span:nth-of-type(3){
+                display: none;
+            }
+            nav > .container li:nth-of-type(9),nav > .container li:nth-of-type(10){
+                display: none;
+            }
+            nav > .container li:nth-last-child(-n+10):hover{
+                background: #E8E8E8;
+            }
+            nav > .container li:nth-last-child(-n+10):hover a{
+                color: black;
+            }
+            .container{
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            nav > .container  li{
+                box-sizing:border-box;
+                height:  1.8125em;
+                width: 25%;
+                border-bottom: 1px solid #D0D0D0;
+                border-left: 1px solid #D0D0D0;
+                background: #E8E8E8;
+                line-height:1.81em;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+            nav > .container a{
+                display: inline;
+                cursor: default;
+                font-size: 12px;
+
+            }
+            nav > .container a:hover{
+                background:#E8E8E8;
+                color: black;
+                cursor: pointer;
+            }
+            footer .school,footer .hxwb,footer .hxwx{
+                display: none;
+            }
+            footer{
+                text-align: center;
+            }
+
+        }
+        @media only screen and (max-width: 15.75em){
+            header{
+                height: 7em;
+            }
+            .wrap-4{
+                margin-top: 3em;
+            }
+        }
+        @media only screen and (min-width: 9.3125em){
+          footer .container{
+              width: 95%;
+          }
+        }
+        @media only screen and (min-width:20.5em){
+            .ztlm{
+                grid;
+            }
+        }
